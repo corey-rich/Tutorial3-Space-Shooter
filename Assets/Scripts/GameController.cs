@@ -38,6 +38,11 @@ public class GameController : MonoBehaviour
                 Application.LoadLevel(Application.loadedLevel);
             }
         }
+
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
     }
 
     IEnumerator SpawnWaves()
